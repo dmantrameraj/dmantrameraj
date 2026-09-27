@@ -12,6 +12,18 @@ dist
 dist-ssr
 *.local
 
+.env
+.env.local
+.env.*.local
+
+# Research data containing real personal data — never commit.
+# Real client lists, interview transcripts and recordings stay out of Git
+# (plan §23 privacy requirements, India DPDP).
+research/data/
+research/transcripts/
+*-real-clients.csv
+research/**/transcript-*
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
